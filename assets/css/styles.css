@@ -123,7 +123,7 @@ h3 {
    
 }
 
-.row {
+.projectRow {
     margin-bottom: 100px;
 }
 
@@ -467,46 +467,19 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;  
+    width: 60%;
     height: 100%;
 }
 
-/* h1 heading for the contact section. */
-#contact-me {
-    text-align: center;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    padding: 20px 0 0 0;
+
+footer div {
+   
     width: 100%;
-
+    margin: 10px;
 }
 
-/* Contact information content.  */
-.my-contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60%;
-    margin: 2%;
-}
 
-.my-contact-info p {
-    margin: 10px 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #F2F2F2;
-}
 
-.my-contact-info a {
-    text-decoration: none;
-    color: #F2F2F2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* Change the color when hovering the linkedin and github text */
-.my-contact-info a:hover {
-   color: #9BA0BF;
-}
 
 
 #copy-right {
@@ -566,13 +539,11 @@ form {
 }
 
 .name-email {
-    margin-bottom: 10px;
-    
+    margin: 10px 3px;
+    padding: 0;
+   
 }
 
-.name-email div {
-    width: 100%;
-}
 
 .col input {
     background-color: var(--lightest-navy);
@@ -611,6 +582,17 @@ footer div {
 .submit-btn:hover {
     background-color: var(--dark-green);
 }
+
+.clear-btn {
+    border-color: var(--bright-green);
+    color: var(--lightest-slate)
+}
+
+.clear-btn:hover {
+    background-color: var(--dark-slate);
+    color: var(--lightest-slate)
+}
+
 
 .sidebar {
     height: 100%;
@@ -688,6 +670,9 @@ footer div {
 .email-link a p:hover {
     color: var(--bright-green);
 }
+
+
+
 
 
 
