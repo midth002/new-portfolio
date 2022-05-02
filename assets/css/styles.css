@@ -1,0 +1,791 @@
+:root {
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #cbd0e4;
+    --white: #e6f1ff;
+    --dark-navy: #020c1b;
+    --bright-green: #3bd3b0;
+    --dark-green: #249c80;
+}
+
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    background-color: var(--navy);
+    overflow-x: hidden;
+    
+}
+
+
+
+.navbar {
+    padding: 15px 10px;
+    background-color: var(--navy);
+}
+
+.navbar-nav ul {
+    padding-left: 0;
+    
+    
+}
+
+.navbar-nav li{
+    display: block;
+    
+    
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+    color: black
+}
+
+.resume {
+    background-color: var(--navy);
+    border-color: var(--bright-green);
+}
+
+.resume:hover {
+    background-color: var(--lightest-navy);
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline::after{
+content: '';
+height: 3px;
+width: 0;
+background: var(--bright-green);
+position: absolute;
+left: 0;
+bottom: -15px;
+transition-property: width;
+transition-duration: 0.4s;
+transition-timing-function: ease-out;
+z-index: 3;
+
+}
+
+h3 {
+    color: var(--bright-green);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.projects {
+    margin: 100px;
+}
+
+.projects div {
+    text-align: center;
+    padding: 10px;
+}
+
+.projects div h2 {
+    color: var(--lightest-slate)
+}
+
+.project-detail-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.project-description {
+   background-color: var(--light-navy);
+   padding: 5rem; 
+   border-radius: 25px;
+   box-shadow: 7px 11px 29px -5px rgba(0,0,0,0.56); 
+   margin: 0;
+   
+}
+
+.row {
+    margin-bottom: 100px;
+}
+
+.submit {
+    background-color: var(--navy);
+    border-color: var(--bright-green);
+    color: white
+}
+
+.submit:hover {
+    background-color: var(--lightest-navy);
+    color: white;
+}
+
+
+.col img {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 50px;
+    opacity: 0.7
+}
+
+.col img:hover {
+    opacity: 1;
+    
+    transition: 0.8s;
+}
+
+.col img:hover::after {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.project-image {
+    width:100%;
+}
+
+
+.project-description p {
+    font-size: 14px;
+    color: var(--lightest-slate);
+    text-align:left;
+    padding: 5px 15px;
+    line-height: 1.3;
+}
+
+.horizontal li{
+    display: inline;
+    color: var( --slate);
+    margin: 10px;
+}
+
+.links a {
+    color: white
+
+}
+
+.links a:hover {
+    color: var(--bright-green);
+    transition: 1s;
+}
+
+
+
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+
+
+/* Styling for all paragraphs */
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0;
+    color: var(--lightest-slate);
+    font-size: 18px;
+}
+
+/* For all h2 */
+h2 {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--lightest-slate);
+}
+
+#name {
+    color: var(--bright-green);
+}
+
+.used {
+    background-color: #736AA5;
+}
+
+/* Styling of the header. Includes background picture and the navbar */
+header {
+    /* Link to the background image */
+    width: 100%;
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resizes the background image so that it covers the entire container */
+    position: flex;
+    
+    align-items: center;
+
+    
+}
+
+/* Navbar styling. Fixed to have the navbar move while scrolling with the page. */
+#navbarNav {
+    display: flex;
+    justify-content: end;
+}
+
+
+.logos {
+    font-size: 2rem;
+   color: var(--bright-green);
+   font-weight: bold;
+}
+
+.jumbotron {
+   width: 50%;
+   justify-content: center;
+   margin-top: 13%;
+   animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+
+/* Home link. Default display is hidden. */
+#home-link {
+    display: none;
+}
+
+nav {
+    z-index: 3;
+    opacity: 0.9;
+}
+
+nav div {
+    padding-top: 5px;
+    display: flex;
+    width: 90%;
+}
+
+.title h2{
+    font-size: 60px;
+}
+
+
+.my-btns {
+   display: flex;
+   color: #563d7c;
+}
+
+.my-btns a {
+    color: #563d7c;
+}
+
+.my-btns button:hover {
+    background-color: #736AA5;
+    color: white;
+}
+
+/* Link for my heading name on the top left. */
+nav h1 a {
+    float: left;
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    padding-bottom: 4px;
+    
+}
+
+/* Any h1 in the header section as a child to the header */
+#fullStackDeveloper {
+    position: absolute;
+    color: #d9dde0;
+    top: 200px;
+    left: 125px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+/* List style */
+nav ul li {
+    list-style: none;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+/* navbar links styling */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Styling for the about me section */
+
+
+/* Paragraph about me */
+article {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 60%;
+    line-height: 1.7; 
+}
+
+article p {
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+
+/* Project Styling section */
+main {
+    margin: 50px 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 87%;
+}
+
+main h2 {
+    width: 100%;
+}
+
+
+
+.btn-links {
+    display: flex;
+    
+}
+
+.tools-list {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.burger img {
+    width: 60%;
+    z-index: 2;
+}
+
+/* For the first project. Have it bigger than the rest.  */
+#first-app {
+    height: 500px;
+    width: 94.7%;
+}
+
+.container {
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+
+.skills {
+    background-color: var(--dark-green);
+    width: 100%;
+    position: relative;
+    padding: 25px 0;
+    overflow: visible;
+    
+}
+
+.skills div h2 {
+    text-align: center;
+}
+
+.skills:before {
+    content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left bottom;
+
+  transform: skewY(3deg);
+}
+
+.skills:after {
+    content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right top;
+
+  transform: skewY(3deg);
+}
+
+
+.skills-list h4 {
+    color: white;
+    font-style: italic;
+}
+
+.skills-list ul li {
+    display: inline-block;
+}
+
+.skills-list-li {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 30px;
+}
+
+#coder {
+    width: 50%;
+    opacity: 1
+}
+
+
+/* Footer Section / Contact information. */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;  
+    height: 100%;
+}
+
+/* h1 heading for the contact section. */
+#contact-me {
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    width: 100%;
+
+}
+
+/* Contact information content.  */
+.my-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 2%;
+}
+
+.my-contact-info p {
+    margin: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F2F2F2;
+}
+
+.my-contact-info a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Change the color when hovering the linkedin and github text */
+.my-contact-info a:hover {
+   color: #9BA0BF;
+}
+
+
+#copy-right {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    color: #F2F2F2;   
+}
+
+.about {
+    background-color: var(--dark-green);
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    overflow: visible;
+    margin-bottom: 100px;
+}
+
+
+.about:before {
+    content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left top;
+
+  transform: skewY(-3deg);
+}
+
+.about:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right bottom;
+  transform: skewY(-3deg);
+}
+
+.about-content {
+   text-align: left;
+}
+
+.container {
+    padding: 0 75px;
+}
+
+form {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-email {
+    margin-bottom: 10px;
+    
+}
+
+.name-email div {
+    width: 100%;
+}
+
+.col input {
+    background-color: var(--lightest-navy);
+}
+
+.form-control {
+    background-color: var(--lightest-navy);
+    border: none;
+}
+
+footer div {
+    text-align: center;
+}
+
+.links-connections {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.links-connections a {
+   text-decoration: none;
+   color: white;
+}
+
+.links-connections a:hover {
+    color: var(--bright-green);
+    transition: 1s;
+}
+
+.submit-btn {
+    background-color: var(--bright-green);
+}
+
+.submit-btn:hover {
+    background-color: var(--dark-green);
+}
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    left: 5%;
+    margin-left: -3px;
+    z-index: 3;
+}
+
+
+#vertical-line-left {
+    border-left: 3px solid var(--lightest-slate);
+    height: 100%;
+    position: relative;
+    
+    top: 38%;
+    margin-left: -3px;
+}
+
+.side-links {
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 50%;
+    left: -50%;
+    top: 35%;
+    
+    
+}
+
+.side-links a {
+    color: var(--lightest-slate);
+}
+
+.side-links a:hover {
+    color: var(--bright-green);
+}
+
+
+.right-sidebar {
+    height: 100%;
+    position: fixed;
+    left: 96%;
+    margin-left: -3px;
+    z-index: 3;
+}
+
+
+#vertical-line-right {
+    border-left: 3px solid var(--lightest-slate);
+    height: 100%;
+    position: relative;
+    top: 65%;
+    
+}
+
+.email-link {
+    position: relative;
+    left: -50%;
+    top: 45%;  
+}
+
+.email-link a {
+    text-decoration: none;
+}
+
+.email-link a p {
+    transform: rotate(-90deg);
+    color: var(--lightest-slate);
+   
+
+} 
+
+.email-link a p:hover {
+    color: var(--bright-green);
+}
+
+
+
+
+
+
+
+/* Media selection for different screen sizes */
+
+/* For screens at 992px or smaller for tablets */
+@media screen and (max-width: 1240px) {
+    figure {
+        width: 40%;
+    }
+}
+
+/* Increase the size of the figures widths */
+@media screen and (max-width: 992px) {
+    figure {
+        width: 85%;
+    }
+
+    nav {
+        height: 8vh;
+    }
+
+
+
+}
+/* For smaller phones. Display the home icon and hide my name */
+@media screen and (max-width: 576px) {
+    nav h1 {
+       display: block;
+       width: 100%;
+    }
+
+    #fullStackDeveloper {
+       font-size: 25px;
+       left: 20px;
+    }
+
+    nav {
+        height: 25%;
+    }
+
+    /* Display the hidden link */
+    #home-link {
+        display: flex;
+    }
+
+    nav ul  {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .about {
+        background-color: #3bd3b0;
+    }
+
+
+
+    section img {
+        width: 100%;
+    }
+
+    nav {
+        height: 15%;
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
