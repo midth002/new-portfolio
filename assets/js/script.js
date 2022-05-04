@@ -2,7 +2,7 @@ let topBurger = $('.top-burger');
 let iconDiv = $('.icon-div');
 let skills = $('.skills-list');
 let middleBurger = $('.middle-burger');
-let bottomBurger = $('.bottom-burger')
+let bottomBurger = $('.bottom-burger');
 
 let ulSkills = $('<ul>')
 

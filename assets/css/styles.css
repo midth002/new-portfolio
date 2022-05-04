@@ -57,6 +57,7 @@ body {
     color: black
 }
 
+
 .resume {
     background-color: var(--navy);
     border-color: var(--bright-green);
@@ -95,7 +96,9 @@ h3 {
 
 .projects {
     margin: 100px;
+    padding: 100px 0;
 }
+
 
 .projects div {
     text-align: center;
@@ -176,15 +179,38 @@ h3 {
     margin: 10px;
 }
 
-.links a {
-    color: white
-
+.live-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    border-radius: 5px;
+    align-items: center;
 }
 
-.links a:hover {
+.live-link:hover {
+    background-color: #112240;
     color: var(--bright-green);
     transition: 1s;
 }
+
+.repo-link {
+    color: var(--bright-green);
+    background-color: #112240;
+    text-decoration: none;
+    border: 1px solid var(--dark-green);
+    padding: 10px 22px;
+    border-radius: 5px;
+    
+}
+
+.repo-link:hover {
+    background-color: var(--dark-green);
+    color: white;
+    transition: 1s;
+}
+
 
 
 
@@ -401,7 +427,7 @@ main h2 {
     background-color: var(--dark-green);
     width: 100%;
     position: relative;
-    padding: 25px 0;
+    padding: 100px 0 50px 0;
     overflow: visible;
     
 }
@@ -496,6 +522,7 @@ footer div {
     padding: 20px 0;
     overflow: visible;
     margin-bottom: 100px;
+    padding: 100px 0 50px 0;
 }
 
 
@@ -538,6 +565,22 @@ form {
     flex-wrap: wrap;
 }
 
+
+
+form .row div {
+    border-bottom: 2px solid var(--bright-green);
+}
+
+.subject {
+    border-bottom: 2px solid var(--bright-green);
+}
+
+.message {
+    border-bottom: 2px solid var(--bright-green);
+}
+
+
+
 .name-email {
     margin: 10px 3px;
     padding: 0;
@@ -553,6 +596,7 @@ form {
     background-color: var(--lightest-navy);
     border: none;
 }
+
 
 footer div {
     text-align: center;
@@ -577,10 +621,14 @@ footer div {
 
 .submit-btn {
     background-color: var(--bright-green);
+    margin: 10px 0;
+    border: 2px solid var(--bright-green);
 }
 
 .submit-btn:hover {
-    background-color: var(--dark-green);
+    background-color: var(--dark-navy);
+    color: white;
+    transition: 0.8s
 }
 
 .clear-btn {
