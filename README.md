@@ -1,6 +1,8 @@
   # My Portfolio
 
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+   [Andrew-Midthun-Portfolio-Link](https://midth002.github.io/new-portfolio/)
   
   ## Table of Contents 
 
