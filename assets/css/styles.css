@@ -660,6 +660,8 @@ footer div {
     margin-left: -3px;
 }
 
+
+
 .side-links {
     
     display: flex;
@@ -694,7 +696,7 @@ footer div {
     border-left: 3px solid var(--lightest-slate);
     height: 100%;
     position: relative;
-    top: 65%;
+    top: 60%;
     
 }
 
@@ -717,6 +719,11 @@ footer div {
 
 .email-link a p:hover {
     color: var(--bright-green);
+}
+
+#about-des {
+    line-height: 1.6;
+    font-size: 25px;
 }
 
 
@@ -785,6 +792,7 @@ footer div {
         background-color: #3bd3b0;
     }
 
+  
 
 
     section img {
